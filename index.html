@@ -10,7 +10,11 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <style>
+        .text-danger{
+            display: none;
+        }
+    </style>
     </head>
 
 <body>
@@ -22,6 +26,7 @@
                 <div class="mb-3">
                     <label for="">course name <span class="text-danger">*</span> </label>
                     <input class="inputs form-control" type="text" placeholder="cource name" id="courseName">
+                    <p class="text nameError text-danger mt-3">your name should be satrt with capital letter and # of charecter between 2 and 10</p>
                 </div>
                 <label for="">course category</label>
                 <input class="inputs form-control" type="text" placeholder="cource category" id="courseCategory">
@@ -32,7 +37,7 @@
                 <label for="">course capacity</label>
                 <input class="inputs form-control" type="number" placeholder="cource capacity" id="courseCapacity">
     
-                <input type="submit" value="Add Course" class="btn btn-outline-secondary mt-3"  id="click" />
+                <input type="submit" value="Add Course" disabled class="btn btn-outline-secondary mt-3"  id="click" />
                 <button class="btn btn-outline-secondary mt-3" type="reset" id="resetbtn">clear</button>
             </form>
         </div>
@@ -63,6 +68,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="main.js"></script>
 </body>
 </html>
